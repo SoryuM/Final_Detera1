@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form method="post" class="w-25 rounded container-md position-absolute top-50 start-50 translate-middle border border-success p-2 mb-2 border-opacity-25">
+        <div>
+            <h3 class="fw-bold text-center">Sign Up</h3>
+        </div>
+        <!-- Username input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="username">Username</label>
+            <div class="input-group">
+                <input name="data[username]" type="text" id="username" class="form-control" />
+                <select name="data[role]" class="form-select" aria-label="Default select example" style="max-width: 100px;">
+                    <option disabled selected>Select</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Staff">Staff</option>
+                </select>
+            </div>
+        </div>
+        
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="first_name">First Name</label>
+            <input name="data[first_name]" type="text" id="first_name" class="form-control" />
+        </div> 
+
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="middle_name">Middle Name</label>
+            <input name="data[middle_name]" type="text" id="middle_name" class="form-control" />
+        </div> 
+
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="last_name">Last Name</label>
+            <input name="data[last_name]" type="text" id="last_name" class="form-control" />
+        </div> 
+        
+
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="contact">Contact</label>
+            <input name="data[contact]" type="text" id="contact" class="form-control" />
+        </div> 
+
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="password">Password</label>
+            <input name="data[password]" type="password" id="password" class="form-control" />
+        </div>
+
+        <!-- Submit button-->
+        
+        <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary w-100">Sign up</button>
+
+         <div class="text-center">
+            <p>Already have an Account? <a href="index.html">Sign in</a></p>
+        </div>
+    </form>
+
+    <script src="js/bootstrap.js"> </script>
+</body>
+</html>
