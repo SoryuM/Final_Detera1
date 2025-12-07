@@ -2,14 +2,11 @@
 
 include 'connectdb.php';
 
-function getAllVisitors(){
-    $conn = Connect();
-    $query = 'SELECT * FROM visitors';
-    $result= $conn->query($query); //Executes query
-    $data = [];
+$visitor = $_POST['visitor'];
 
-    while($row = $result->fetch_assoc()){
-        $data[]=$row;
-    }
-    return $data;
+if (addVisitor($visitor)){
+    header('location: ../dashboard.php');
 }
+
+?>
+

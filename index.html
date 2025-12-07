@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
- <form class=" class= w-50  rounded container-md position-absolute top-50 start-50 translate-middle border border-success p-2 mb-2 border-opacity-25" >
+ <form action="functions/auth.php?action=login" method="post" class=" class= w-50  rounded container-md position-absolute top-50 start-50 translate-middle border border-success p-2 mb-2 border-opacity-25" >
     <div class="tab-content">
         <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
     <form>
 
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="username" id="loginName" class="form-control" />
-        <label class="form-label" for="loginName">Email or username</label>
+        <input type="username" id="loginName" name="data[username]" class="form-control" />
+        <label class="form-label" for="loginName">Username</label>
       </div>
 
       <!-- Password input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="loginPassword" class="form-control" />
+        <input type="password" id="loginPassword" name="data[password]" class="form-control" />
         <label class="form-label" for="loginPassword">Password</label>
       </div>
 

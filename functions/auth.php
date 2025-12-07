@@ -2,7 +2,7 @@
 
 include "connectdb.php";
 
-    $data = $_POST['data'];
+    $data = $_POST['data'] ?? null;
 
     $action = $_GET['action'];
 
@@ -26,4 +26,11 @@ include "connectdb.php";
             }
         }
     }
+     if ($action === 'logout') {
+      session_start();
+      session_unset();
+      session_destroy();
+      header('Location: ../index.html');
+      exit();
+  }
 ?>    
